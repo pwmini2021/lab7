@@ -7,6 +7,7 @@ import Layout from "./Layout";
 import CarListPage from "./pages/CarListPage";
 import CreateCarPage from "./pages/CreateCarPage";
 import {Car, CARS} from "./data/Car";
+import CarDetailsPage from "./pages/CarDetailsPage";
 
 const App: React.FC = () => {
     const [cars, setCars] = useState(CARS);
@@ -32,6 +33,7 @@ const App: React.FC = () => {
                 <Route index element={<HomePage/>}/>
                 <Route path={"cars"} element={<CarListPage cars={cars}/>}/>
                 <Route path={"cars/new"} element={<CreateCarPage createCar={addCar}/>}/>
+                <Route path={"cars/:id"} element={<CarDetailsPage cars={cars}/>}/>
                 <Route path={"about"} element={<AboutPage/>}/>
                 <Route path={"*"} element={<Error404Page/>}/>
             </Route>
