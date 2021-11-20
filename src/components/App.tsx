@@ -4,12 +4,14 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import Error404Page from "./pages/Error404Page";
 import Layout from "./Layout";
+import CarListPage from "./pages/CarListPage";
 
 const App: React.FC = () => {
     return (
         <Routes>
             <Route path={"/"} element={<Layout/>}>
                 <Route index element={<HomePage/>}/>
+                <Route path={"cars"} element={<CarListPage/>}/>
                 <Route path={"about"} element={<AboutPage/>}/>
                 <Route path={"*"} element={<Error404Page/>}/>
             </Route>

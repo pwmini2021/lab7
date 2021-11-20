@@ -15,6 +15,7 @@ const Layout: React.FC = () => {
             <header>
                 <h1>Layout</h1>
                 <NavLink to={'/'} style={getLinkStyle}>Home</NavLink> &nbsp;
+                <NavLink to={'/cars'} style={getLinkStyle}>Cars</NavLink> &nbsp;
                 <NavLink to={'/about'} style={getLinkStyle}>About</NavLink>
             </header>
             <Outlet/>
