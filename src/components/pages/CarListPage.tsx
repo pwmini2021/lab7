@@ -1,6 +1,5 @@
 import React from 'react';
 import {Car} from "../data/Car";
-import CarListItem from "../carListItems/CarListItem";
 import {Link} from "react-router-dom";
 
 export interface CarListPageProps {
@@ -14,7 +13,14 @@ const CarListPage: React.FC<CarListPageProps> = (props: CarListPageProps) => {
             <Link to={'/cars/new'}>
                 <button>Add new</button>
             </Link>
-            {props.cars.map((car: Car) => <CarListItem car={car} key={car.id}/>)}
+            {props.cars.map((car: Car) => (
+                <div key={car.id}>
+                    {car.name}
+                    <Link to={`/cars/${car.id}`}>
+                        <button>View details</button>
+                    </Link>
+                </div>
+            ))}
         </>
     );
 }

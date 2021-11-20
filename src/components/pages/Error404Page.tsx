@@ -2,7 +2,7 @@ import React from 'react';
 
 const Error404Page: React.FC = () => {
     return (
-        <>Error 404</>
+        <h3>Error 404</h3>
     );
 }
 

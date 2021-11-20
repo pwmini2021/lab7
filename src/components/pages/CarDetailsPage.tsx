@@ -15,7 +15,7 @@ const CarDetailsPage: React.FC<CarDetailsPageProps> = (props: CarDetailsPageProp
 
     return !car ? <Error404Page/> : (
         <>
-            <div>ID: {car.id}</div>
+            <h3>Car {car.id}</h3>
             <div>Name: {car.name}</div>
         </>
     );

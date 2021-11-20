@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomePage: React.FC = () => {
     return (
-        <>Hello</>
+        <h3>Hello</h3>
     );
 }
 

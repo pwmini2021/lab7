@@ -13,7 +13,7 @@ const Layout: React.FC = () => {
     return (
         <>
             <header>
-                <h1>Layout</h1>
+                <h1>Routing app</h1>
                 <NavLink to={'/'} style={getLinkStyle}>Home</NavLink> &nbsp;
                 <NavLink to={'/cars'} style={getLinkStyle}>Cars</NavLink> &nbsp;
                 <NavLink to={'/about'} style={getLinkStyle}>About</NavLink>
