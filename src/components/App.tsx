@@ -6,8 +6,8 @@ import Error404Page from "./pages/Error404Page";
 import Layout from "./Layout";
 import CarListPage from "./pages/CarListPage";
 import CreateCarPage from "./pages/CreateCarPage";
-import {Car, CARS} from "./data/Car";
 import CarDetailsPage from "./pages/CarDetailsPage";
+import {Car, CARS} from "../data/Car";
 
 const App: React.FC = () => {
     const [cars, setCars] = useState(CARS);

@@ -1,6 +1,6 @@
 import React from 'react';
-import {Car} from "../data/Car";
 import {Link} from "react-router-dom";
+import {Car} from "../../data/Car";
 
 export interface CarListPageProps {
     cars: Car[];

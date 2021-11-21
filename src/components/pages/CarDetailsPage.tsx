@@ -1,7 +1,7 @@
 import React from 'react';
-import {Car} from "../data/Car";
 import {useParams} from "react-router-dom";
 import Error404Page from "./Error404Page";
+import {Car} from "../../data/Car";
 
 export interface CarDetailsPageProps {
     cars: Car[];
