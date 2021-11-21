@@ -31,9 +31,11 @@ const App: React.FC = () => {
         <Routes>
             <Route path={"/"} element={<Layout/>}>
                 <Route index element={<HomePage/>}/>
-                <Route path={"cars"} element={<CarListPage cars={cars}/>}/>
-                <Route path={"cars/new"} element={<CreateCarPage createCar={addCar}/>}/>
-                <Route path={"cars/:id"} element={<CarDetailsPage cars={cars}/>}/>
+                <Route path={"cars"}>
+                    <Route index element={<CarListPage cars={cars}/>}/>
+                    <Route path={"new"} element={<CreateCarPage createCar={addCar}/>}/>
+                    <Route path={":id"} element={<CarDetailsPage cars={cars}/>}/>
+                </Route>
                 <Route path={"about"} element={<AboutPage/>}/>
                 <Route path={"*"} element={<Error404Page/>}/>
             </Route>

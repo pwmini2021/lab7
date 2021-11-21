@@ -9,7 +9,7 @@ export interface CarListPageProps {
 const CarListPage: React.FC<CarListPageProps> = (props: CarListPageProps) => {
     return (
         <>
-            <h3>CarList</h3>
+            <h3>Car List</h3>
             <Link to={'/cars/new'}>
                 <button>Add new</button>
             </Link>
